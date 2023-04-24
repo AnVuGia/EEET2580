@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/main-page.css">
+   <link rel="stylesheet" href="styles/modal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <main class="main-section">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="images/log-170x50.svg" alt="" class="header-log-image">
+            </div>
+            <div class="nav-header">
+                <ul class="nav-header-list">
+                    <li class="nav-header-item">Dashboard</li>
+                    <li class="nav-header-item">Search</li>
+                    <li class="nav-header-item">Group Info</li>
+                </ul>
+            </div>
+            <img src="" alt="" class="profile-image">            
+        </div>
+        <div class="capstone-project-info"  >
+            <div class="capstone-panel">
+                <div class="capstone-pannel-in">Dashboard</div>
+                <div class="btn create-group-btn">Create Group</div>
+            </div>
+            <div class="separator"></div>
+            <div class="capstone-list">
+                <div class="capstone-item">
+                    <div class="capstone-item-color"></div>
+                    <div class="capstone-item-info">
+                        <p class="item-name">Machine Learning</p>
+                        <p class="course-code">COSC2753</p>
+                        <p class="time-enrolled">Semester 1 2023</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="modal" hidden ="hidden">
+            <div class="modal__overlay"></div>
+            <div class="modal__body" >
+                    <!-- Authen form -->
+                    <div class="group-form">
+                       <div class="group-form-heading">
+                            New Student Group
+                       </div>
+                       <div class="modal-separator"></div>
+                       <div class="modal-main-section">
+                            <p class="modal-passage">
+                                Groups are a good place to collaborate on projects or to figure out schedules for study sessions and the like. Every group gets a calendar, a wiki, discussions, and a little bit of space to store files. Groups can collaborate on documents, or even schedule web conferences. It's really like a mini-course where you can work with a smaller number of students on a more focused project.
+                            </p>
+                            <div class="information-section">
+                                <label for="" class="information-section-element input-label">Group Name</label>
+                                <input type="text" class="information-section-element input-modal" >
+                                <label for="" class="information-section-element input-label">Joining</label>
+                                <select name="" id="" class="information-section-element modal-select">
+                                    <option value="1" class="seletion-option">Course members are free to join</option>
+                                    <option value="1" class="seletion-option">Membership by invitation</option>
+                                </select>
+                                <label for="" class="information-section-element input-label">Invite student</label>
+                                <input type="text" class="information-section-element input-modal" placeholder="Search">
+                            </div>
+                            <div class="modal-controller">
+                                <div id = "cancel-btn" class="btn modal-button-controller">Cancel</div>
+                                <div id = "submit-btn" class="btn modal-button-controller">Submit</div>
+                            </div>
+                       </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-section" hidden ="hidden">
+            <div class="search-container">
+                <div class="search-filter">
+                    <p class="search-filter-heading">My Filter</p>
+                    <input type="text" class="search-selection-item search-input" placeholder="Please Enter Capstone Name">
+                    <select class="search-selection-item search-selection" name="Major" id="major-selection">
+                        <option value="major-option1">Select Major</option>
+                    </select>
+                    <select class="search-selection-item search-selection" name="Supervisor" id="supervior-selection">
+                        <option value="supervior-option1">Select Supervisor</option>
+                    </select>
+                    <select class="search-selection-item search-selection" name="Company" id="company-selection">
+                        <option value="company-option1">Select Company</option>
+                    </select>
+                </div>
+                <div class="display-result">
+                    <p class="search-no-result"></p>
+                    <div class="display-result-list">
+                        <div class="capstone-list">
+                            <div class="capstone-item">
+                                <div class="capstone-item-color"></div>
+                                <div class="capstone-item-info">
+                                    <p class="item-name">Machine Learning</p>
+                                    <p class="course-code">COSC2753</p>
+                                    <p class="time-enrolled">Semester 1 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script/main-page.js"></script>
+</body>
+</html>
